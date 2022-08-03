@@ -74,7 +74,7 @@
 								src="image/seo-and-web.png" alt="user_icon">
 						</div>
 						<h1><%=m.get("userCount")%></h1>
-						<h1 class="text-uppercase text-muted">Users</h1>
+						<h3 class="text-uppercase text-muted">Total Users</h3>
 					</div>
 
 				</div>
@@ -94,7 +94,7 @@
 						<h1>
 							<%=list.size() %>
 						</h1>
-						<h1 class="text-uppercase text-muted">Categories</h1>
+						<h3 class="text-uppercase text-muted">Total Categories</h3>
 					</div>
 
 				</div>
@@ -115,7 +115,7 @@
 						<h1>
 							<%=m.get("productCount")%>
 						</h1>
-						<h1 class="text-uppercase text-muted">Products</h1>
+						<h3 class="text-uppercase text-muted">Total Products</h3>
 					</div>
 
 				</div>
@@ -139,7 +139,7 @@
 								src="image/keys.png" alt="user_icon">
 						</div>
 						<p class="mt-2">Click here to add new Category</p>
-						<h1 class="text-uppercase text-muted">Add Categories</h1>
+						<h4 class="text-uppercase text-muted">Add Categories</h4>
 					</div>
 
 				</div>
@@ -157,7 +157,7 @@
 								src="image/plus.png" alt="user_icon">
 						</div>
 						<p class="mt-2">Click here to add new Product</p>
-						<h1 class="text-uppercase text-muted">Add Product</h1>
+						<h4 class="text-uppercase text-muted">Add Product</h4>
 					</div>
 
 				</div>
@@ -183,7 +183,7 @@
 								src="image/passwordChange.jpg" alt="user_icon">
 						</div>
 						<p class="mt-2">Click here for Admin Password Change</p>
-						<h1 class="text-uppercase text-muted">Pwd Change</h1>
+						<h4 class="text-uppercase text-muted">Password Change</h4>
 					</div>
 
 				</div>
@@ -202,7 +202,7 @@
 								src="image/userList.png" alt="user_icon">
 						</div>
 						<p class="mt-2">Click Here for User-List and User-Search</p>
-						<h1 class="text-uppercase text-muted">Get User List</h1>
+						<h4 class="text-uppercase text-muted">See User List</h4>
 					</div>
 
 				</div>
@@ -222,7 +222,7 @@
 						</div>
 
 						<p class="mt-2">Click here to see Purchase Report</p>
-						<h1 class="text-uppercase text-muted">Filter Data</h1>
+						<h4 class="text-uppercase text-muted">Search Data</h4>
 					</div>
 
 				</div>
