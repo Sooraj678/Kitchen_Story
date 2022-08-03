@@ -6,9 +6,9 @@
 %>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-info">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
 	<div class="container">
-		<a class="navbar-brand" href="foodboxWelcome.jsp"><b>Foodbox-App</b></a>
+		<a class="navbar-brand" href="foodboxWelcome.jsp"><b>Kitchen-Story</b></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -19,7 +19,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link"
-					href="index.jsp"><b>Home</b> <span class="sr-only">(current)</span>
+					href="index.jsp"><b>Home-Page</b> <span class="sr-only">(current)</span>
 				</a></li>
 
 			</ul>
@@ -38,16 +38,16 @@
 				%>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="login.jsp"><b>Login </b></a></li>
+					href="login.jsp"><b>Login-Here</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="register.jsp"><b>Register</b> </a></li>
+					href="register.jsp"><b>New-User</b> </a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp"><b>About</b></a></li>
+					href="aboutUS.jsp"><b>Know About-Us</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp"><b>Contact</b></a></li>
+					href="contactUS.jsp"><b>Send any Query to Us</b></a></li>
 
 				<%
 					} else {
@@ -59,13 +59,13 @@
 				</a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="LogoutCtl"><b>Logout</b></a></li>
+					href="LogoutCtl"><b>User-Logout</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp"><b>About</b></a></li>
+					href="aboutUS.jsp"><b>Know About-Us</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp"><b>Contact</b></a></li>
+					href="contactUS.jsp"><b>Send any Query to Us</b></a></li>
 
 				<%
 					}
