@@ -1,5 +1,5 @@
 <!-- Conditional Rendering for logout Button when user is Logged In -->
-<%@page import="com.foodbox.entities.User"%>
+<%@page import="com.kitchenstory.entities.User"%>
 
 <%
 	User userNavbar = (User) session.getAttribute("current-user");

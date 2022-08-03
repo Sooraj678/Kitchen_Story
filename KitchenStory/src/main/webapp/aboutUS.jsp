@@ -13,7 +13,7 @@
 
 </head>
 <body>
-	<%@include file="components/navbar.jsp"%>
+	<%@include file="../components/navbar.jsp"%>
 <body>
 	<div class="about-section">
 		<div class="inner-width">

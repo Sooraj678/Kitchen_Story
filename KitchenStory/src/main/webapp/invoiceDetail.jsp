@@ -1,4 +1,4 @@
-<%@page import="com.foodbox.entities.User"%>
+<%@page import="com.kitchenstory.entities.User"%>
 <%
 	User user = (User) session.getAttribute("current-user");
 System.out.println("User Session is :" + user);
@@ -11,7 +11,7 @@ if (user == null) {
 }
 %>
 
-<%@page import="com.foodbox.helper.DbConnectionProvider"%>
+<%@page import="com.kitchenstory.helper.DbConnectionProvider"%>
 <%@page import="java.sql.*"%>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"

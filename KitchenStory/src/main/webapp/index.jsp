@@ -1,10 +1,10 @@
-<%@page import="com.foodbox.helper.Helper"%>
-<%@page import="com.foodbox.entities.Category"%>
-<%@page import="com.foodbox.model.CategoryDao"%>
-<%@page import="com.foodbox.entities.Product"%>
+<%@page import="com.kitchenstory.helper.Helper"%>
+<%@page import="com.kitchenstory.entities.Category"%>
+<%@page import="com.kitchenstory.model.CategoryDao"%>
+<%@page import="com.kitchenstory.entities.Product"%>
 <%@page import="java.util.List"%>
-<%@page import="com.foodbox.model.ProductDao"%>
-<%@page import="com.foodbox.helper.FactoryProvider"%>
+<%@page import="com.kitchenstory.model.ProductDao"%>
+<%@page import="com.kitchenstory.helper.FactoryProvider"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>

@@ -11,10 +11,10 @@
 		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
 		<property name="hbm2ddl.auto">update</property>
 		<property name="show_sql">true</property>
-		<mapping class="com.KitchenStory.entities.User" />
-		<mapping class="com.KitchenStory.entities.Category" />
-		<mapping class="com.KitchenStory.entities.Product" />
-		<mapping class="com.KitchenStory.entities.ContactUser" />
+		<mapping class="com.kitchenstory.entities.User" />
+		<mapping class="com.kitchenstory.entities.Category" />
+		<mapping class="com.kitchenstory.entities.Product" />
+		<mapping class="com.kitchenstory.entities.ContactUser" />
 
 	</session-factory>
 
