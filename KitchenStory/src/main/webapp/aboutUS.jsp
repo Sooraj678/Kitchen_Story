@@ -18,21 +18,18 @@
 	<div class="about-section">
 		<div class="inner-width">
 			<h1 style="color: #673ab7 !important">
-				<b>About Foodbox Online Portal</b>
+				<b>About Kitchen-Story Online Portal</b>
 			</h1>
 			<div class="border"></div>
 			<div class="about-section-row">
 				<div class="about-section-col">
 					<div class="about">
-						<p>This Foodbox Application has a multiple category for
-							selecting and ordering food items. Previously we have a
-							restaurant chain, and now, We wish to launch Our Foodbox
-							Application, We found out that the online ordering of food items
-							with companies, such as Swiggy and Foodpanda were gaining more
-							profit by eliminating middle men from the equation. As a result,
-							the team decided to Launch an online food delivery web
+						<p>Kitchen Story is an e-commerce portal that lets people shop  basic 
+						kitchens' items on their website.This Kitchen Story Application has a multiple category for
+							selecting and ordering kitchen items. Previously we have a
+							Offline Shop, and now, We wish to launching Our E-commerce
 							application with a rich and user-friendly interface.</p>
-						<a href="foodboxWelcome.jsp" style="color: blue;">Know more
+						<a href="kitchenStoryWelcome.jsp" style="color: blue;">Know more
 							about us..!!</a>
 					</div>
 				</div>
@@ -41,7 +38,7 @@
 						Ratings</h2>
 					<div class="skills">
 						<div class="skill">
-							<div class="title">Biryani</div>
+							<div class="title">Grocery Products</div>
 							<div class="progress">
 								<div class="progress-bar p1">
 									<span>90%</span>
@@ -50,7 +47,7 @@
 						</div>
 
 						<div class="skill">
-							<div class="title">Chinese</div>
+							<div class="title">Kitchen-Electronics</div>
 							<div class="progress">
 								<div class="progress-bar p2">
 									<span>85%</span>
@@ -59,7 +56,7 @@
 						</div>
 
 						<div class="skill">
-							<div class="title">Home Style</div>
+							<div class="title">Vegetables</div>
 							<div class="progress">
 								<div class="progress-bar p2">
 									<span>79.30%</span>
@@ -67,7 +64,7 @@
 							</div>
 						</div>
 						<div class="skill">
-							<div class="title">Pizza</div>
+							<div class="title">Plastic Storage</div>
 							<div class="progress">
 								<div class="progress-bar p2">
 									<span>69%</span>
@@ -76,7 +73,7 @@
 						</div>
 
 						<div class="skill">
-							<div class="title">Bowl</div>
+							<div class="title">Household Items</div>
 							<div class="progress">
 								<div class="progress-bar p3">
 									<span>65%</span>

@@ -8,7 +8,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
 	<div class="container">
-		<a class="navbar-brand" href="foodboxWelcome.jsp"><b>Kitchen-Story</b></a>
+		<a class="navbar-brand" href="kitchenStoryWelcome.jsp"><b>Kitchen-Story</b></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"

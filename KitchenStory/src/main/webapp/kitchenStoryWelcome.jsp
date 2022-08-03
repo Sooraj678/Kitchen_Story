@@ -18,22 +18,19 @@
 	<div class="about-section">
 		<div class="inner-width">
 			<h1 style="color: black !important">
-				<b>Welcome to the Foodbox Online Portal</b>
+				<b>Welcome to Kitchen-Story Online Portal</b>
 			</h1>
 			<div class="border"></div>
 			<div class="about-section-row">
 				<div class="about-section-col">
 					<div class="about">
-						<p>This Foodbox Application has a multiple category for
-							selecting and ordering food items. Previously we have a
-							restaurant chain, and now, We wish to launch Our Foodbox
-							Application, We found out that the online ordering of food items
-							with companies, such as Swiggy and Foodpanda were gaining more
-							profit by eliminating middle men from the equation. As a result,
-							the team decided to Launch an online food delivery web
+						<p>Kitchen Story is an e-commerce portal that lets people shop  basic 
+						Kitchens' items on their website.This Kitchen Story Application has a multiple category for
+							selecting and ordering kitchen items. Previously we have a
+							Offline Shop, and now, We wish to launching Our E-commerce
 							application with a rich and user-friendly interface.</p>
 						<a href="index.jsp" style="color: blue;"><b>For online
-								Food Delivery Please visit here...!!</b></a>
+								Delivery of Kitchen items Please visit here...!!</b></a>
 					</div>
 				</div>
 			</div>
