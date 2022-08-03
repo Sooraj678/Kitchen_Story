@@ -1,4 +1,4 @@
-package com.foodbox.controller;
+package com.kitchenstory.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -7,8 +7,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.foodbox.entities.PurchasedRecord;
-import com.foodbox.model.PurchasedRecordDao;
+import com.kitchenstory.entities.PurchasedRecord;
+import com.kitchenstory.model.PurchasedRecordDao;
+
+
 
 /**
  * Servlet implementation class CheckoutOrderedCtl

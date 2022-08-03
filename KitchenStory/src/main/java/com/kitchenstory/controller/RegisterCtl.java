@@ -1,4 +1,4 @@
-package com.foodbox.controller;
+package com.kitchenstory.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.foodbox.entities.User;
-import com.foodbox.helper.FactoryProvider;
+import com.kitchenstory.entities.User;
+import com.kitchenstory.helper.FactoryProvider;
 
 /**
  * Servlet implementation class RegisterCtl

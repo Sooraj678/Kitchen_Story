@@ -1,4 +1,4 @@
-package com.foodbox.controller;
+package com.kitchenstory.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,9 +12,11 @@ import javax.servlet.http.HttpSession;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.foodbox.entities.ContactUser;
-import com.foodbox.helper.FactoryProvider;
-import com.foodbox.model.ContactUserDao;
+import com.kitchenstory.entities.ContactUser;
+import com.kitchenstory.helper.FactoryProvider;
+import com.kitchenstory.model.ContactUserDao;
+
+
 
 public class ContactUserCtl extends HttpServlet {
 	private static final long serialVersionUID = 1L;

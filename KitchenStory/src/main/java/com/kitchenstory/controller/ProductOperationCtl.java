@@ -1,4 +1,4 @@
-package com.foodbox.controller;
+package com.kitchenstory.controller;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,11 +15,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 
-import com.foodbox.entities.Category;
-import com.foodbox.entities.Product;
-import com.foodbox.helper.FactoryProvider;
-import com.foodbox.model.CategoryDao;
-import com.foodbox.model.ProductDao;
+import com.kitchenstory.entities.Category;
+import com.kitchenstory.entities.Product;
+import com.kitchenstory.helper.FactoryProvider;
+import com.kitchenstory.model.CategoryDao;
+import com.kitchenstory.model.ProductDao;
 
 //this annotation is used to access video,audio or Images from the Form  
 @MultipartConfig
