@@ -85,19 +85,13 @@ if (user == null) {
 								<label for="Category"><b>Select Food Category for
 										Delivery...!!</b></label><br> <select name="purchaseCategory"
 									required>
-									<option selected>Default Food item Category is
-										Selected</option>
-									<option value="Biryani">Biryani</option>
-									<option value="Chicken">Chicken</option>
-									<option value="Pizza">Pizza</option>
-									<option value="Bowl">Bowl</option>
-									<option value="Paratha">Paratha</option>
-									<option value="Home Style">Home Style</option>
-									<option value="Desi Chai">Desi Chai</option>
-									<option value="Chinese">Chinese</option>
-									<option value="Indian Roti">Indian Roti</option>
-									<option value="Rice">Rice</option>
-									<option value="Soup">Soup</option>
+									<option selected>Items' Category is
+									</option>
+									<option value="plasticStorage">Plastic-Storage</option>
+									<option value="householdItems">Household-Items</option>
+									<option value="groceryProducts">Grocery-Products</option>
+									<option value="vegetables">Vegetables</option>
+									<option value="kitchenElectronics">Kitchen-Electronics</option>
 								</select>
 							</div>
 
@@ -105,8 +99,7 @@ if (user == null) {
 							<div class="form-group">
 								<label for="paymentMode"><b>Select Payment Mode</b></label><br>
 								<select name="paymentMode" required>
-									<option selected>Default Payment Mode is Cash on
-										Delivery</option>
+									<option selected>Payment Mode is</option>
 									<option value="Cash On Delivery">Cash On Delivery</option>
 									<option value="NetBanking">NetBanking</option>
 									<option value="Credit Card">Credit Card</option>
@@ -137,8 +130,8 @@ if (user == null) {
 								<button class="btn btn-info">Order Now</button>
 								<!-- <button class="btn btn-outline-primary">Continue Shopping With US</button> -->
 								<div class="container text-center mt-3">
-									<a href="foodboxWelcome.jsp" class="text-center d-block mb-2"><h5
-											style="color: blue;">Explore Our Food..!!!</h5> </a>
+									<a href="kitchenStoryWelcome.jsp" class="text-center d-block mb-2"><h5
+											style="color: blue;">Explore our Kitchen Items' Galary</h5> </a>
 								</div>
 							</div>
 

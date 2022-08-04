@@ -98,7 +98,7 @@ if (user == null) {
 
 
 					<div class="container text-center card-header bg-info">
-						<a href="payBill.jsp"><h5 style="color: black">Pay Your
+						<a href="payBill.jsp?emailId=<%=user.getUserEmail() %>"><h5 style="color: black">Pay Your
 								Bill...!!</h5></a>
 
 					</div>

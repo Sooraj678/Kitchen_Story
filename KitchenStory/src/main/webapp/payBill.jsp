@@ -76,13 +76,37 @@ if (user == null) {
 									aria-describedby="nameHelp"
 									placeholder="Enter Card Holder Name Here..!!">
 							</div>
-
-							<div class="form-group">
+								
+								<%
+								try {
+								String userEmail = request.getParameter("emailId");
+								System.out.println("coming Id for Bill Print is: " + userEmail);
+								Connection con = DbConnectionProvider.getCon();
+								Statement stmt = con.createStatement();
+								ResultSet rs = stmt.executeQuery("select SUM(purchase_TotalAmount) from purchasedrecord where purchase_UserEmail = '" + userEmail + "'");
+								String CountTotalAmount="";
+								while (rs.next()) { 
+									CountTotalAmount = rs.getString(1);
+									System.out.println(CountTotalAmount);
+								}	
+							%>
+								<div class="form-group">
 								<label for="phone" style="color: black !important;"><b>Amount
 										to be Paid:</b> </label> <input name="amount" type="number"
-									class="form-control" id="amount" aria-describedby="amountHelp"
+								value="<%=CountTotalAmount%>"	class="form-control" id="amount" aria-describedby="amountHelp"
 									required>
 							</div>
+								
+							
+							<%
+								
+
+							} catch (Exception e) {
+								System.out.println(e);
+							}
+							%>
+															
+							
 
 							<div class="container text-center">
 								<input type="submit" name="makePayment" value="Make Payment">
