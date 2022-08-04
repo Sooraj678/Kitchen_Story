@@ -60,8 +60,8 @@
 					%>
 
 					<a href="index.jsp?category=<%=c.getCategoryId()%>"
-						class="list-group-item list-group-item-action"><h5
-							style="color: #01579b"><%=c.getCategoryTitle()%></h5></a>
+						class="list-group-item list-group-item-action"><h6
+							style="color: #01579b"><%=c.getCategoryTitle()%></h6></a>
 
 					<%
 						}
