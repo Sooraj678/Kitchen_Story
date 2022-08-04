@@ -17,5 +17,4 @@
 		<mapping class="com.kitchenstory.entities.ContactUser" />
 
 	</session-factory>
-
 </hibernate-configuration>
