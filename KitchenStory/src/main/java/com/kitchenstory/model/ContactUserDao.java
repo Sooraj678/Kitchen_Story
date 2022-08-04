@@ -6,8 +6,6 @@ import org.hibernate.Transaction;
 
 import com.kitchenstory.entities.ContactUser;
 
-
-
 public class ContactUserDao {
 
 	private SessionFactory factory;

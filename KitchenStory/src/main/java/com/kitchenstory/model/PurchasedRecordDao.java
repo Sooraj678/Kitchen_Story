@@ -5,8 +5,6 @@ import java.sql.*;
 import com.kitchenstory.entities.PurchasedRecord;
 import com.kitchenstory.helper.DbConnectionProvider;
 
-
-
 public class PurchasedRecordDao {
 
 	public static long nextPk() {

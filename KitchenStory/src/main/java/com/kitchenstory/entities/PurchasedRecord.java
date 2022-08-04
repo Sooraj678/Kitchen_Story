@@ -1,5 +1,4 @@
 package com.kitchenstory.entities;
-
 public class PurchasedRecord {
 
 	private long id_Purchase;

@@ -9,8 +9,6 @@ import org.hibernate.query.Query;
 
 import com.kitchenstory.entities.Product;
 
-
-
 public class ProductDao {
 
 	private SessionFactory factory;

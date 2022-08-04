@@ -10,8 +10,6 @@ import org.hibernate.query.Query;
 
 import com.kitchenstory.entities.Category;
 
-
-
 public class CategoryDao {
 
 	private SessionFactory factory;

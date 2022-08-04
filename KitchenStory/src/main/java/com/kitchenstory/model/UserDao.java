@@ -7,8 +7,6 @@ import com.kitchenstory.entities.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-
-
 public class UserDao {
 	private SessionFactory factory;
 
