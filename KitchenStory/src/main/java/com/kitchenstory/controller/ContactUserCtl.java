@@ -16,8 +16,6 @@ import com.kitchenstory.entities.ContactUser;
 import com.kitchenstory.helper.FactoryProvider;
 import com.kitchenstory.model.ContactUserDao;
 
-
-
 public class ContactUserCtl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -10,8 +10,6 @@ import javax.servlet.http.HttpSession;
 import com.kitchenstory.entities.PurchasedRecord;
 import com.kitchenstory.model.PurchasedRecordDao;
 
-
-
 /**
  * Servlet implementation class CheckoutOrderedCtl
  */
