@@ -65,18 +65,11 @@ if (user == null) {
 							<div class="form-group">
 								<label for="name" style="color: black !important;"><b>Card
 										Holder Name:</b></label> <br> <input name="user_name" type="text"
-									value="<%=user.getUserName()%>" class="form-control" id="name"
+									value="" class="form-control" id="name"
 									aria-describedby="nameHelp"
 									placeholder="Enter Card Holder Name Here..!!">
 							</div>
-							<div class="form-group">
-								<label for="name" style="color: black !important;"><b>Email
-										Id:</b></label> <br> <input name="emailId" type="email"
-									value="<%=user.getUserEmail()%>" class="form-control" id="name"
-									aria-describedby="nameHelp"
-									placeholder="Enter Card Holder Name Here..!!">
-							</div>
-								
+							
 								<%
 								try {
 								String userEmail = request.getParameter("emailId");
@@ -99,7 +92,6 @@ if (user == null) {
 								
 							
 							<%
-								
 
 							} catch (Exception e) {
 								System.out.println(e);

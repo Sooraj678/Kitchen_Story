@@ -85,7 +85,7 @@ if (user == null) {
 								<label for="Category"><b>Select Food Category for
 										Delivery...!!</b></label><br> <select name="purchaseCategory"
 									required>
-									<option selected>Items' Category is
+									<option selected>Kitchens' Category is
 									</option>
 									<option value="plasticStorage">Plastic-Storage</option>
 									<option value="householdItems">Household-Items</option>
@@ -97,13 +97,9 @@ if (user == null) {
 
 
 							<div class="form-group">
-								<label for="paymentMode"><b>Select Payment Mode</b></label><br>
+								<label for="paymentMode"><b>Only Payment Mode is</b></label><br>
 								<select name="paymentMode" required>
-									<option selected>Payment Mode is</option>
-									<option value="Cash On Delivery">Cash On Delivery</option>
-									<option value="NetBanking">NetBanking</option>
-									<option value="Credit Card">Credit Card</option>
-									<option value="UPI ID">UPI ID</option>
+									<option value="cardPayment">Credit Card or Debit Card</option>
 								</select>
 							</div>
 

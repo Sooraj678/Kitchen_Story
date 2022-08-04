@@ -33,18 +33,13 @@
 	<div class="about-section">
 		<div class="inner-width">
 			<h1 style="color: #673ab7 !important">
-				<b>Placed-Ordered Details</b>
+				<b>Purchased-Items Details are: </b>
 			</h1>
 			<div class="border"></div>
 			<div class="about-section-row">
 				<div class="about-section-col">
 					<%@include file="components/message.jsp"%>
 					<div class="about"></div>
-					<div class="card mt-2">
-						<h6 style="color: blue;">
-							<b>Order Placed...Please remove items from your Cart...!!</b>
-						</h6>
-					</div>
 				</div>
 				<div class="about-section-col">
 
@@ -52,7 +47,7 @@
 
 
 						<label for="EmailIdForOrders"><h4 style="color: black;">
-								<b>Email-Id used for Orders...!!</b>
+								<b>E-mail used for this Shopping is: </b>
 							</h4> </label> <input name="email" value="<%=user.getUserEmail() %> "
 							type="email" class="form-control" id="exampleInputEmail1"
 							aria-describedby="emailHelp" placeholder="Enter email"> <small

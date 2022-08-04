@@ -24,7 +24,7 @@ if (user == null) {
 </head>
 <%@include file="components/navbar.jsp"%>
 <body>
-	<div class="card-header bg-warning text-white mt-3 mb-3">
+	<div class="card-header bg-secondary text-white mt-3 mb-3">
 		<h1 style="color: black;">
 			<b>Order Details Are:</b>
 		</h1>
@@ -89,17 +89,10 @@ if (user == null) {
 
 
 					</table>
-					<label for="EmailIdForOrders"><h4 style="color: black;">
-							<b>Invoice will be send on this E-mail Id:</b>
-						</h4> </label> <input name="email" value="<%=user.getUserEmail()%>"
-						type="email" class="form-control" id="exampleInputEmail1"
-						aria-describedby="emailHelp"
-						placeholder="Enter Email to save bill as Pdf">
-
 
 					<div class="container text-center card-header bg-info">
-						<a href="payBill.jsp?emailId=<%=user.getUserEmail() %>"><h5 style="color: black">Pay Your
-								Bill...!!</h5></a>
+						<a href="payBill.jsp?emailId=<%=user.getUserEmail() %>"><h5 style="color: black">Pay Yours' Order
+								Bill</h5></a>
 
 					</div>
 				</div>
