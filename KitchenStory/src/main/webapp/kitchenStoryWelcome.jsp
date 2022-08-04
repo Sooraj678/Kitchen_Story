@@ -24,11 +24,12 @@
 			<div class="about-section-row">
 				<div class="about-section-col">
 					<div class="about">
-						<p>Kitchen Story is an e-commerce portal that lets people shop  basic 
-						Kitchens' items on their website.This Kitchen Story Application has a multiple category for
-							selecting and ordering kitchen items. Previously we have a
-							Offline Shop, and now, We wish to launching Our E-commerce
-							application with a rich and user-friendly interface.</p>
+						<p>Kitchen Story is an e-commerce portal that lets people shop
+							basic Kitchens' items on their website.This Kitchen Story
+							Application has a multiple category for selecting and ordering
+							kitchen items. Previously we have a Offline Shop, and now, We
+							wish to launching Our E-commerce application with a rich and
+							user-friendly interface.</p>
 						<a href="index.jsp" style="color: blue;"><b>For online
 								Delivery of Kitchen items Please visit here...!!</b></a>
 					</div>

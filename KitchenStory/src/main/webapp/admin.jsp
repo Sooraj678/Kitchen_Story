@@ -69,7 +69,7 @@
 				<!-- First box -->
 				<div class="card">
 					<div class="card-body text-center">
-					
+
 						<h1><%=m.get("userCount")%></h1>
 						<h3 class="text-uppercase text-muted">Total Users</h3>
 					</div>
@@ -84,7 +84,7 @@
 				<!-- Second box -->
 				<div class="card">
 					<div class="card-body text-center">
-						
+
 						<h1>
 							<%=list.size() %>
 						</h1>
@@ -101,7 +101,7 @@
 				<!-- Third box -->
 				<div class="card">
 					<div class="card-body text-center">
-						
+
 
 						<h1>
 							<%=m.get("productCount")%>
@@ -125,7 +125,7 @@
 				<div class="card" data-toggle="modal"
 					data-target="#add-category-modal">
 					<div class="card-body text-center">
-						
+
 						<p class="mt-2">Click here to add new Category</p>
 						<h4 class="text-uppercase text-muted">Add Categories</h4>
 					</div>
@@ -140,7 +140,7 @@
 				<div class="card" data-toggle="modal"
 					data-target="#add-product-modal">
 					<div class="card-body text-center">
-					
+
 						<p class="mt-2">Click here to add new Product</p>
 						<h4 class="text-uppercase text-muted">Add Product</h4>
 					</div>
@@ -163,7 +163,7 @@
 				<div class="card" data-toggle="modal"
 					data-target="#change-adminPassword-modal">
 					<div class="card-body text-center">
-						
+
 						<p class="mt-2">Click here for Admin Password Change</p>
 						<h4 class="text-uppercase text-muted">Password Change</h4>
 					</div>
@@ -179,7 +179,7 @@
 				<div class="card" data-toggle="modal"
 					data-target="#getUserList-modal">
 					<div class="card-body text-center">
-						
+
 						<p class="mt-2">Click Here for User-List and User-Search</p>
 						<h4 class="text-uppercase text-muted">See User List</h4>
 					</div>
@@ -195,7 +195,7 @@
 				<div class="card" data-toggle="modal"
 					data-target="#purchasedReport-modal">
 					<div class="card-body text-center">
-					
+
 
 						<p class="mt-2">Click here to see Purchase Report</p>
 						<h4 class="text-uppercase text-muted">Search Data</h4>

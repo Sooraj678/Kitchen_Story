@@ -1,16 +1,14 @@
 
 <%
+	User user = (User) session.getAttribute("current-user");
+System.out.println("User Session is :" + user);
+if (user == null) {
 
-    User user = (User) session.getAttribute("current-user");
-	System.out.println("User Session is :"+ user);
-    if (user == null) {
+	session.setAttribute("message", "You are not logged in !! Login first to access Checkout page");
+	response.sendRedirect("login.jsp");
+	return;
 
-        session.setAttribute("message", "You are not logged in !! Login first to access Checkout page");
-        response.sendRedirect("login.jsp");
-        return;
-
-    }
-
+}
 %>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -48,14 +46,14 @@
 
 						<label for="EmailIdForOrders"><h4 style="color: black;">
 								<b>E-mail used for this Shopping is: </b>
-							</h4> </label> <input name="email" value="<%=user.getUserEmail() %> "
+							</h4> </label> <input name="email" value="<%=user.getUserEmail()%> "
 							type="email" class="form-control" id="exampleInputEmail1"
 							aria-describedby="emailHelp" placeholder="Enter email"> <small
 							id="emailHelp" class="form-text text-muted">We'll never
 							share your email with anyone else.</small>
 					</div>
 					<div class="about">
-						<a href="bill.jsp?emailId=<%=user.getUserEmail() %>"
+						<a href="bill.jsp?emailId=<%=user.getUserEmail()%>"
 							style="color: black;"><b>See Your Bill...!!</b></a>
 					</div>
 

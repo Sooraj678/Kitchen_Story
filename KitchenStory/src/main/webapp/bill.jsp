@@ -91,8 +91,8 @@ if (user == null) {
 					</table>
 
 					<div class="container text-center card-header bg-info">
-						<a href="payBill.jsp?emailId=<%=user.getUserEmail() %>"><h5 style="color: black">Pay Yours' Order
-								Bill</h5></a>
+						<a href="payBill.jsp?emailId=<%=user.getUserEmail()%>"><h5
+								style="color: black">Pay Yours' Order Bill</h5></a>
 
 					</div>
 				</div>

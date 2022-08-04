@@ -44,8 +44,8 @@
 							String search = request.getParameter("searchName");
 							Connection con = DbConnectionProvider.getCon();
 							Statement stmt = con.createStatement();
-							ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_Date like '%" + search + "%' or purchase_Category like '%"
-							+ search + "%'");
+							ResultSet rs = stmt.executeQuery("select *from purchasedrecord where purchase_Date like '%" + search
+							+ "%' or purchase_Category like '%" + search + "%'");
 							while (rs.next()) {
 								z = 1;
 						%>

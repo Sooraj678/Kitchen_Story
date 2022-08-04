@@ -69,8 +69,8 @@ if (user == null) {
 									aria-describedby="nameHelp"
 									placeholder="Enter Card Holder Name Here..!!">
 							</div>
-							
-								<%
+
+							<%
 								try {
 								String userEmail = request.getParameter("emailId");
 								System.out.println("coming Id for Bill Print is: " + userEmail);
@@ -83,22 +83,22 @@ if (user == null) {
 									System.out.println(CountTotalAmount);
 								}	
 							%>
-								<div class="form-group">
+							<div class="form-group">
 								<label for="phone" style="color: black !important;"><b>Amount
 										to be Paid:</b> </label> <input name="amount" type="number"
-								value="<%=CountTotalAmount%>"	class="form-control" id="amount" aria-describedby="amountHelp"
-									required>
+									value="<%=CountTotalAmount%>" class="form-control" id="amount"
+									aria-describedby="amountHelp" required>
 							</div>
-								
-							
+
+
 							<%
 
 							} catch (Exception e) {
 								System.out.println(e);
 							}
 							%>
-															
-							
+
+
 
 							<div class="container text-center">
 								<input type="submit" name="makePayment" value="Make Payment">

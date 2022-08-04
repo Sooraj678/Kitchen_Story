@@ -42,7 +42,8 @@ if (user == null) {
 							<b><h1 style="color: blue;">Your Payment Got successful</h1></b>
 						</p>
 
-						<a href="index.jsp" style="color: blue;"><b>For Kitchen-Story Galary Please visit here...!!</b></a>
+						<a href="index.jsp" style="color: blue;"><b>For
+								Kitchen-Story Galary Please visit here...!!</b></a>
 					</div>
 				</div>
 			</div>

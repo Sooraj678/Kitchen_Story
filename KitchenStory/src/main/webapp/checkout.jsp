@@ -85,8 +85,7 @@ if (user == null) {
 								<label for="Category"><b>Select Food Category for
 										Delivery...!!</b></label><br> <select name="purchaseCategory"
 									required>
-									<option selected>Kitchens' Category is
-									</option>
+									<option selected>Kitchens' Category is</option>
 									<option value="plasticStorage">Plastic-Storage</option>
 									<option value="householdItems">Household-Items</option>
 									<option value="groceryProducts">Grocery-Products</option>
@@ -126,8 +125,9 @@ if (user == null) {
 								<button class="btn btn-info">Order Now</button>
 								<!-- <button class="btn btn-outline-primary">Continue Shopping With US</button> -->
 								<div class="container text-center mt-3">
-									<a href="kitchenStoryWelcome.jsp" class="text-center d-block mb-2"><h5
-											style="color: blue;">Explore our Kitchen Items' Galary</h5> </a>
+									<a href="kitchenStoryWelcome.jsp"
+										class="text-center d-block mb-2"><h5 style="color: blue;">Explore
+											our Kitchen Items' Galary</h5> </a>
 								</div>
 							</div>
 
