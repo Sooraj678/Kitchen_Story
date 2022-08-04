@@ -18,10 +18,6 @@
 					<%@include file="components/message.jsp"%>
 					<div class="card-body px-5">
 
-						<div class="container text-center">
-							<img src="image/contactUs.jpg" style="max-width: 100px;"
-								class="img-fluid" alt="">
-						</div>
 						<div class="card-header bg-secondary text-white mt-3 mb-3">
 							<h1>Any Query...!!</h1>
 						</div>

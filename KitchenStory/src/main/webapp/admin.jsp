@@ -208,7 +208,42 @@
 
 
 		<!-- End of Third Row to Perform Additional Operation For the Admin -->
+<!-- Second row for two boxes -->
+		<div class="row mt-3">
 
+			<!-- Second Row: First Column -->
+			<div class="col-md-6">
+
+				<!-- Second Row: First Column : First Box -->
+				<div class="card" data-toggle="modal"
+					data-target="#add-category-modal">
+					<div class="card-body text-center">
+
+						<p class="mt-2">Click here to manage Category</p>
+						<h4 class="text-uppercase text-muted">Categories' Management</h4>
+					</div>
+
+				</div>
+
+			</div>
+			<!-- Second Row: Second Column -->
+			<div class="col-md-6">
+
+				<!--Second Row: Second Column: Second Box -->
+				<div class="card" data-toggle="modal"
+					data-target="#add-product-modal">
+					<div class="card-body text-center">
+
+						<p class="mt-2">Click here to Manage Product</p>
+						<h4 class="text-uppercase text-muted">Products' Management</h4>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
 
 	</div>
 
