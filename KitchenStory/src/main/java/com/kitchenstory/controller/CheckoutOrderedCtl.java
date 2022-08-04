@@ -72,7 +72,7 @@ public class CheckoutOrderedCtl extends HttpServlet {
 
 			record.setPurchase_DeliveryStatus(purchase_DeliveryStatus);
 
-			String purchase_ExpectedMinutesForDelivery = "39-Minutes Max";
+			String purchase_ExpectedMinutesForDelivery = "7-Days Max";
 
 			record.setPurchase_ExpectedMinutesForDelivery(purchase_ExpectedMinutesForDelivery);
 
