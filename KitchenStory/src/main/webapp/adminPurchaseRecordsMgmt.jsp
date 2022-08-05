@@ -1,4 +1,5 @@
 <%
+HttpSession httpSession = request.getSession();
 	User user =  (User) session.getAttribute("current-user");
 		if(user == null){
 			
@@ -101,8 +102,11 @@
 	<!--For Accessing CheckOut Page from directly Cart only -->
 	<%@include file="components/common_modals.jsp"%>
 
-
-
+<div class="container">
+<a href="admin.jsp" class="text-right d-block mb-2">
+		<h6 style="color: blue;">Go to Admin Page</h6>
+</a>
+</div>
 </body>
 <%@include file="components/footer.jsp"%>
 </html>
