@@ -82,7 +82,7 @@ HttpSession httpSession = request.getSession();
 						<td><%=rs.getString(10)%></td>
 						<td><%=rs.getString(11)%></td>
 						<td><a href=""><h6>updateRecord</h6></a></td>
-						<td><a href=""><h6>deleteRecord</h6></a></td>
+						<td><a href="DeleteOrdersCtl?idPurchase=<%=rs.getString(1)%>"><h6>deleteRecord</h6></a></td>
 					</tr>
 
 					<%

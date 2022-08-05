@@ -68,7 +68,7 @@ HttpSession httpSession = request.getSession();
 						<td><%=rs.getString(2)%></td>
 						<td><%=rs.getString(3)%></td>
 						<td><a href=""><h6>updateRecord</h6></a></td>
-						<td><a href=""><h6>deleteRecord</h6></a></td>
+						<td><h6>Category Can't be deleted due Foriegn key Constrain</h6></a></td>
 					</tr>
 
 					<%

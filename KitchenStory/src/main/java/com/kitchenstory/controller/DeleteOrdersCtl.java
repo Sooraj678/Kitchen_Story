@@ -33,19 +33,19 @@ public class DeleteOrdersCtl extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-		String orderedEmail = request.getParameter("userEmail");
-		System.out.println("Coming ID value is:" + orderedEmail);
+		String idForPurchase = request.getParameter("idPurchase");
+		System.out.println("Coming ID value is:" + idForPurchase);
 
 		try {
 			Connection conn = DbConnectionProvider.getCon();
 			Statement st = conn.createStatement();
 
-			st.executeUpdate("delete from purchasedrecord where purchase_UserEmail = '" + orderedEmail + "'  ");
+			st.executeUpdate("delete from purchasedrecord where id_Purchase = '" + idForPurchase + "'  ");
 			HttpSession httpSession = request.getSession();
 			httpSession.setAttribute("message",
-					"Your Order records got deleted Successfully..!! Please remove your selected Items from Your cart and  User Email is: "
-							+ orderedEmail);
-			response.sendRedirect("invoiceDetail.jsp");
+					"Order records got deleted Successfully..!! Deleted Items' ID is ="
+							+ idForPurchase);
+			response.sendRedirect("adminPurchaseRecordsMgmt.jsp");
 		} catch (Exception e) {
 			System.out.println(e);
 

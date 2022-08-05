@@ -76,7 +76,7 @@
 						<td><%=rs.getString(7)%></td>
 						<td><%=rs.getString(8)%></td>
 						<td><a href=""><h6>updateRecord</h6></a></td>
-						<td><a href=""><h6>deleteRecord</h6></a></td>
+						<td><a href="DeleteProductCtl?idProduct=<%=rs.getString(1)%>"><h6>deleteRecord</h6></a></td>
 					</tr>
 
 					<%
