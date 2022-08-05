@@ -220,7 +220,7 @@
 
 						<p class="mt-2">Click here to manage Category</p>
 
-						<a href="payBill.jsp"><h4 class="text-uppercase"
+						<a href="adminCategoriesMgmt.jsp"><h4 class="text-uppercase"
 								style="color: black;">Categories' Management</h4></a>
 					</div>
 
@@ -235,7 +235,7 @@
 					<div class="card-body text-center">
 
 						<p class="mt-2">Click here to Manage Product</p>
-						<a href="payBill.jsp">
+						<a href="adminProductMgmt.jsp">
 							<h4 class="text-uppercase" style="color:black;">Products'
 								Management</h4>
 						</a>
@@ -263,7 +263,7 @@
 
 						<p class="mt-2">Click here to manage Purchase Records</p>
 
-						<a href="payBill.jsp"><h4 class="text-uppercase"
+						<a href="adminPurchaseRecordsMgmt.jsp"><h4 class="text-uppercase"
 								style="color: black;">Purchase Record Management</h4></a>
 					</div>
 

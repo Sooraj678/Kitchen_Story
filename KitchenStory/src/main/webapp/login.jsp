@@ -16,11 +16,12 @@
 
 				<div class="card mt-3">
 					<div class="card-header bg-secondary text-white">
+					<%@ include file="components/message.jsp"%>
 						<h1>Login Here :</h1>
 					</div>
 
 					<div class="card-body">
-						<%@ include file="components/message.jsp"%>
+						
 
 						<form action="LoginCtl" method="post">
 							<div class="form-group">

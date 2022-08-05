@@ -50,7 +50,7 @@ if (user == null) {
 								<th scope="col">DeliveryStatus</th>
 								<th scope="col">ModeOfPayment</th>
 								<th scope="col">TotalAmount</th>
-								<th scope="col">MaxMinutesForDelivery</th>
+								<th scope="col">Time</th>
 							</tr>
 						</thead>
 						<tbody>
