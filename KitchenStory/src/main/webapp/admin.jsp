@@ -67,7 +67,7 @@
 			<div class="col-md-4">
 
 				<!-- First box -->
-				<div class="card">
+				<div class="card bg-info">
 					<div class="card-body text-center">
 
 						<h1><%=m.get("userCount")%></h1>
@@ -82,7 +82,7 @@
 			<div class="col-md-4">
 
 				<!-- Second box -->
-				<div class="card">
+				<div class="card bg-info">
 					<div class="card-body text-center">
 
 						<h1>
@@ -99,7 +99,7 @@
 			<div class="col-md-4">
 
 				<!-- Third box -->
-				<div class="card">
+				<div class="card bg-info">
 					<div class="card-body text-center">
 
 
@@ -122,7 +122,7 @@
 			<div class="col-md-6">
 
 				<!-- Second Row: First Column : First Box -->
-				<div class="card" data-toggle="modal"
+				<div class="card bg-warning" data-toggle="modal"
 					data-target="#add-category-modal">
 					<div class="card-body text-center">
 
@@ -137,7 +137,7 @@
 			<div class="col-md-6">
 
 				<!--Second Row: Second Column: Second Box -->
-				<div class="card" data-toggle="modal"
+				<div class="card bg-warning" data-toggle="modal"
 					data-target="#add-product-modal">
 					<div class="card-body text-center">
 
@@ -160,7 +160,7 @@
 			<div class="col-md-4">
 
 				<!-- First box -->
-				<div class="card" data-toggle="modal"
+				<div class="card bg-warning" data-toggle="modal"
 					data-target="#change-adminPassword-modal">
 					<div class="card-body text-center">
 
@@ -176,7 +176,7 @@
 			<div class="col-md-4">
 
 				<!-- Second box -->
-				<div class="card" data-toggle="modal"
+				<div class="card bg-warning" data-toggle="modal"
 					data-target="#getUserList-modal">
 					<div class="card-body text-center">
 
@@ -192,7 +192,7 @@
 			<div class="col-md-4">
 
 				<!-- Third box -->
-				<div class="card" data-toggle="modal"
+				<div class="card bg-warning" data-toggle="modal"
 					data-target="#purchasedReport-modal">
 					<div class="card-body text-center">
 
@@ -208,19 +208,20 @@
 
 
 		<!-- End of Third Row to Perform Additional Operation For the Admin -->
-<!-- Second row for two boxes -->
+		<!-- Fourth row for two boxes to manage category and Product -->
 		<div class="row mt-3">
 
 			<!-- Second Row: First Column -->
 			<div class="col-md-6">
 
 				<!-- Second Row: First Column : First Box -->
-				<div class="card" data-toggle="modal"
-					data-target="#add-category-modal">
+				<div class="card bg-secondary">
 					<div class="card-body text-center">
 
 						<p class="mt-2">Click here to manage Category</p>
-						<h4 class="text-uppercase text-muted">Categories' Management</h4>
+
+						<a href="payBill.jsp"><h4 class="text-uppercase"
+								style="color: black;">Categories' Management</h4></a>
 					</div>
 
 				</div>
@@ -230,18 +231,45 @@
 			<div class="col-md-6">
 
 				<!--Second Row: Second Column: Second Box -->
-				<div class="card" data-toggle="modal"
-					data-target="#add-product-modal">
+				<div class="card bg-secondary">
 					<div class="card-body text-center">
 
 						<p class="mt-2">Click here to Manage Product</p>
-						<h4 class="text-uppercase text-muted">Products' Management</h4>
+						<a href="payBill.jsp">
+							<h4 class="text-uppercase" style="color:black;">Products'
+								Management</h4>
+						</a>
 					</div>
 
 				</div>
 
 			</div>
 
+
+		</div>
+		
+		
+		
+		<!-- End of Fourth Row to Perform Additional Operation For the Admin -->
+		<!-- Fifth row for 1 boxes to manage Purchase Record -->
+		<div class="row mt-3">
+
+			<!-- Second Row: First Column -->
+			<div class="col-md-12">
+
+				<!-- Second Row: First Column : First Box -->
+				<div class="card bg-secondary">
+					<div class="card-body text-center">
+
+						<p class="mt-2">Click here to manage Purchase Records</p>
+
+						<a href="payBill.jsp"><h4 class="text-uppercase"
+								style="color: black;">Purchase Record Management</h4></a>
+					</div>
+
+				</div>
+
+			</div>
 
 		</div>
 
