@@ -24,19 +24,19 @@
 
 				<div class="card-columns">
 
-					<!-- Traversing Products -->
+					<!-- Searching inside Products -->
 					<%
-							HttpSession httpSession = request.getSession();
-						int z = 0;
-						try {
-							String search = request.getParameter("searchName");
-							Connection con = DbConnectionProvider.getCon();
-							Statement stmt = con.createStatement();
-							ResultSet rs = stmt.executeQuery("select *from product where pName like '%" + search + "%' or pDesc like '%"
-							+ search + "%'  ");
-							while (rs.next()) {
-								z = 1;
-						%>
+						HttpSession httpSession = request.getSession();
+					int z = 0;
+					try {
+						String search = request.getParameter("searchName");
+						Connection con = DbConnectionProvider.getCon();
+						Statement stmt = con.createStatement();
+						ResultSet rs = stmt.executeQuery(
+						"select *from product where pName like '%" + search + "%' or pDesc like '%" + search + "%'  ");
+						while (rs.next()) {
+							z = 1;
+					%>
 
 					<!-- Product Card -->
 					<div class="card product-card">
@@ -71,14 +71,13 @@
 						</div>
 					</div>
 
-
 					<%
-							}
-
-						} catch (Exception e) {
-							System.out.println(e);
 						}
-						%>
+
+					} catch (Exception e) {
+						System.out.println(e);
+					}
+					%>
 
 
 				</div>
@@ -97,7 +96,7 @@
 	}
 	%>
 
-<%@include file="components/common_modals.jsp"%>
+	<%@include file="components/common_modals.jsp"%>
 
 </body>
 
