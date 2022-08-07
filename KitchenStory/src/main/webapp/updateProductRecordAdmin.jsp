@@ -35,10 +35,10 @@
 			 while(rs.next()){
 %>
 
-						<form action="#" method="post">
+						<form action="UpdateProductCtl" method="post">
 
 
-							<input type="hidden" name="id"
+							<input type="hidden" name="idforUpdateProduct"
 								value="<% out.println(idProduct);%>">
 
 

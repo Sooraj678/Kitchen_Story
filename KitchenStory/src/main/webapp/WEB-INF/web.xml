@@ -64,6 +64,12 @@
   	<description></description>
   	<servlet-class>com.kitchenstory.controller.DeleteCategoryCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UpdateProductCtl</servlet-name>
+  	<display-name>UpdateProductCtl</display-name>
+  	<description></description>
+  	<servlet-class>com.kitchenstory.controller.UpdateProductCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>RegisterCtl</servlet-name>
   	<url-pattern>/RegisterCtl</url-pattern>
@@ -103,5 +109,9 @@
   <servlet-mapping>
   	<servlet-name>DeleteCategoryCtl</servlet-name>
   	<url-pattern>/DeleteCategoryCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateProductCtl</servlet-name>
+  	<url-pattern>/UpdateProductCtl</url-pattern>
   </servlet-mapping>
 </web-app>
