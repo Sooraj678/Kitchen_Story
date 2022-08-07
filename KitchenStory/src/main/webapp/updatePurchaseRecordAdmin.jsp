@@ -1,3 +1,24 @@
+
+<%
+	User user =  (User) session.getAttribute("current-user");
+		if(user == null){
+			
+			session.setAttribute("message", "You are not logged in !!! Please login first");
+			response.sendRedirect("login.jsp");
+		}else
+		{
+			if(user.getUserType().equals("normal")){
+			
+				session.setAttribute("message", "You are not admin !!! Do not Access this Page...!!!");
+				response.sendRedirect("login.jsp");
+			}	
+			
+			
+		}
+
+
+%>
+
 <%@page import="com.kitchenstory.helper.DbConnectionProvider"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -27,78 +48,78 @@
 
 
 						<%
-	String idPurchase =request.getParameter("idPurchase");
-	try{
-			Connection con = DbConnectionProvider.getCon();
-			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select *from purchasedrecord where id_Purchase ='"+idPurchase+"' ");
-			 while(rs.next()){
-%>
+							String idPurchase = request.getParameter("idPurchase");
+						try {
+							Connection con = DbConnectionProvider.getCon();
+							Statement stmt = con.createStatement();
+							ResultSet rs = stmt.executeQuery("select *from purchasedrecord where id_Purchase ='" + idPurchase + "' ");
+							while (rs.next()) {
+						%>
 
 						<form action="UpdatePurchaseRecordCtl" method="post">
 
 
 							<input type="hidden" name="idforUpdatePurchaseDeatils"
-								value="<% out.println(idPurchase);%>">
+								value="<%out.println(idPurchase);%>">
 
 
 							<div class="form-group">
 								<label for="purchaseUser">User Name</label> <input
-									name="userName" value="<%= rs.getString(2)%>" type="text"
+									name="userName" value="<%=rs.getString(2)%>" type="text"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="emailForPurchase">Email Id</label> <input
-									name="emailUser" type="email" value="<%= rs.getString(3)%>"
+									name="emailUser" type="email" value="<%=rs.getString(3)%>"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Mobile-Number">Phone Number</label> <input
-									name="usermobile" value="<%= rs.getString(4)%>" type="number"
+									name="usermobile" value="<%=rs.getString(4)%>" type="number"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Purchase-Date">Date</label> <input name="date"
-									value="<%= rs.getString(6)%>" type="text" class="form-control">
+									value="<%=rs.getString(6)%>" type="text" class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Product-Category">Product Category</label> <input
-									name="category" value="<%= rs.getString(7)%>" type="text"
+									name="category" value="<%=rs.getString(7)%>" type="text"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Total-Amount">Total Amount</label> <input
-									name="totalAmount" value="<%= rs.getString(10)%>" type="number"
+									name="totalAmount" value="<%=rs.getString(10)%>" type="number"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Shipping-Address"><b> Shipping Address</b></label> <input
-									name="shippingAddress" value="<%= rs.getString(5)%>"
+									name="shippingAddress" value="<%=rs.getString(5)%>"
 									type="text" class="form-control" required></input>
 							</div>
-							
-								<div class="form-group">
+
+							<div class="form-group">
 								<label for="Total-Amount">Delivery Status</label> <input
-									name="deliveryStatus" value="<%= rs.getString(8)%>" type="text"
+									name="deliveryStatus" value="<%=rs.getString(8)%>" type="text"
 									class="form-control">
 							</div>
-							
-								<div class="form-group">
+
+							<div class="form-group">
 								<label for="Total-Amount">Payment Options</label> <input
-									name="paymentMode" value="<%= rs.getString(9)%>" type="text"
+									name="paymentMode" value="<%=rs.getString(9)%>" type="text"
 									class="form-control">
 							</div>
-							
-								<div class="form-group">
+
+							<div class="form-group">
 								<label for="Total-Amount">Time for Delivery</label> <input
-									name="totalDaysforDelivery" value="<%= rs.getString(11)%>" type="text"
-									class="form-control">
+									name="totalDaysforDelivery" value="<%=rs.getString(11)%>"
+									type="text" class="form-control">
 							</div>
 
 
@@ -109,14 +130,13 @@
 						</form>
 
 
-						<% 						
+						<%
+							}
+
+						} catch (Exception e) {
+							System.out.println(e);
 						}
-		
-	}
-	catch(Exception e){
-		System.out.println(e);
-	}
-%>
+						%>
 
 					</div>
 

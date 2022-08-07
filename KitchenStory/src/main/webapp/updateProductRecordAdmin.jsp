@@ -1,3 +1,24 @@
+
+<%
+	User user =  (User) session.getAttribute("current-user");
+		if(user == null){
+			
+			session.setAttribute("message", "You are not logged in !!! Please login first");
+			response.sendRedirect("login.jsp");
+		}else
+		{
+			if(user.getUserType().equals("normal")){
+			
+				session.setAttribute("message", "You are not admin !!! Do not Access this Page...!!!");
+				response.sendRedirect("login.jsp");
+			}	
+			
+			
+		}
+
+
+%>
+
 <%@page import="com.kitchenstory.helper.DbConnectionProvider"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -27,48 +48,48 @@
 
 
 						<%
-	String idProduct =request.getParameter("idProduct");
-	try{
-			Connection con = DbConnectionProvider.getCon();
-			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select *from product where pId ='"+idProduct+"' ");
-			 while(rs.next()){
-%>
+							String idProduct = request.getParameter("idProduct");
+						try {
+							Connection con = DbConnectionProvider.getCon();
+							Statement stmt = con.createStatement();
+							ResultSet rs = stmt.executeQuery("select *from product where pId ='" + idProduct + "' ");
+							while (rs.next()) {
+						%>
 
 						<form action="UpdateProductCtl" method="post">
 
 
 							<input type="hidden" name="idforUpdateProduct"
-								value="<% out.println(idProduct);%>">
+								value="<%out.println(idProduct);%>">
 
 
 							<div class="form-group">
 								<label for="Product-Description">Product Description</label> <input
-									name="pDescription" value="<%= rs.getString(2)%>" type="text"
+									name="pDescription" value="<%=rs.getString(2)%>" type="text"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Product-Discount">Product Discount</label> <input
-									name="pDiscount" type="number" value="<%= rs.getString(3)%>"
+									name="pDiscount" type="number" value="<%=rs.getString(3)%>"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Product-Name">Product Name</label> <input
-									name="pName" value="<%= rs.getString(4)%>" type="text"
+									name="pName" value="<%=rs.getString(4)%>" type="text"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Product-Price">Product Price</label> <input
-									name="pPrice" value="<%= rs.getString(6)%>" type="number"
+									name="pPrice" value="<%=rs.getString(6)%>" type="number"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Product-Quantity">Product Quantity</label> <input
-									name="pQuantity" value="<%= rs.getString(7)%>" type="number"
+									name="pQuantity" value="<%=rs.getString(7)%>" type="number"
 									class="form-control">
 							</div>
 
@@ -80,14 +101,13 @@
 						</form>
 
 
-						<% 						
+						<%
+							}
+
+						} catch (Exception e) {
+							System.out.println(e);
 						}
-		
-	}
-	catch(Exception e){
-		System.out.println(e);
-	}
-%>
+						%>
 
 					</div>
 

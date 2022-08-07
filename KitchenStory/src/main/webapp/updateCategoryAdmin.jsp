@@ -1,3 +1,24 @@
+
+<%
+	User user =  (User) session.getAttribute("current-user");
+		if(user == null){
+			
+			session.setAttribute("message", "You are not logged in !!! Please login first");
+			response.sendRedirect("login.jsp");
+		}else
+		{
+			if(user.getUserType().equals("normal")){
+			
+				session.setAttribute("message", "You are not admin !!! Do not Access this Page...!!!");
+				response.sendRedirect("login.jsp");
+			}	
+			
+			
+		}
+
+
+%>
+
 <%@page import="com.kitchenstory.helper.DbConnectionProvider"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -27,30 +48,30 @@
 
 
 						<%
-	String idCategory =request.getParameter("idCategory");
-	try{
-			Connection con = DbConnectionProvider.getCon();
-			Statement stmt = con.createStatement();
-			ResultSet rs = stmt.executeQuery("select *from category where categoryId ='"+idCategory+"' ");
-			 while(rs.next()){
-%>
+							String idCategory = request.getParameter("idCategory");
+						try {
+							Connection con = DbConnectionProvider.getCon();
+							Statement stmt = con.createStatement();
+							ResultSet rs = stmt.executeQuery("select *from category where categoryId ='" + idCategory + "' ");
+							while (rs.next()) {
+						%>
 
 						<form action="UpdateCategoryCtl" method="post">
 
 
 							<input type="hidden" name="idforUpdateCategory"
-								value="<% out.println(idCategory);%>">
+								value="<%out.println(idCategory);%>">
 
 
 							<div class="form-group">
 								<label for="Category-Description">Category Description</label> <input
-									name="cDescription" value="<%= rs.getString(2)%>" type="text"
+									name="cDescription" value="<%=rs.getString(2)%>" type="text"
 									class="form-control">
 							</div>
 
 							<div class="form-group">
 								<label for="Category-Details">Category Title</label> <input
-									name="cTitle" type="text" value="<%= rs.getString(3)%>"
+									name="cTitle" type="text" value="<%=rs.getString(3)%>"
 									class="form-control">
 							</div>
 
@@ -61,14 +82,13 @@
 						</form>
 
 
-						<% 						
+						<%
+							}
+
+						} catch (Exception e) {
+							System.out.println(e);
 						}
-		
-	}
-	catch(Exception e){
-		System.out.println(e);
-	}
-%>
+						%>
 
 					</div>
 

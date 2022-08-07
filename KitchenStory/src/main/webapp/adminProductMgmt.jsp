@@ -32,7 +32,7 @@
 </head>
 <%@include file="components/navbar.jsp"%>
 <body>
-	<div class="row card-header bg-info mt-3 mb-3">
+	<div class="row card-header bg-warning mt-3 mb-3">
 		<h1 style="color: black;">
 			Products Records:
 		</h1>
@@ -51,8 +51,8 @@
 						<th scope="col">Product-Price</th>
 						<th scope="col">Product-Quantity</th>
 						<th scope="col">Product-Category</th>
-						<th scope="col">UpdateAction</th>
-						<th scope="col">DeleteAction</th>
+						<th scope="col">Update Action</th>
+						<th scope="col">Delete Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -75,8 +75,8 @@
 						<td><%=rs.getString(6)%></td>
 						<td><%=rs.getString(7)%></td>
 						<td><%=rs.getString(8)%></td>
-						<td><a href="updateProductRecordAdmin.jsp?idProduct=<%=rs.getString(1)%>"><h6>updateRecord</h6></a></td>
-						<td><a href="DeleteProductCtl?idProduct=<%=rs.getString(1)%>"><h6>deleteRecord</h6></a></td>
+						<td><a href="updateProductRecordAdmin.jsp?idProduct=<%=rs.getString(1)%>"><h6>Update Record</h6></a></td>
+						<td><a href="DeleteProductCtl?idProduct=<%=rs.getString(1)%>"><h6>Delete Record</h6></a></td>
 					</tr>
 
 					<%

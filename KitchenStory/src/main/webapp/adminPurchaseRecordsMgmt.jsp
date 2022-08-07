@@ -32,7 +32,7 @@ HttpSession httpSession = request.getSession();
 </head>
 <%@include file="components/navbar.jsp"%>
 <body>
-	<div class="row card-header bg-info mt-3 mb-3">
+	<div class="row card-header bg-warning mt-3 mb-3">
 		<h1 style="color: black;">
 			Purchase Records:
 		</h1>
@@ -54,8 +54,8 @@ HttpSession httpSession = request.getSession();
 						<th scope="col">ModeOfPayment</th>
 						<th scope="col">Amount</th>
 						<th scope="col">Time</th>
-						<th scope="col">UpdateAction</th>
-						<th scope="col">DeleteAction</th>
+						<th scope="col">Update Action</th>
+						<th scope="col">Delete Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -81,8 +81,8 @@ HttpSession httpSession = request.getSession();
 						<td><%=rs.getString(9)%></td>
 						<td><%=rs.getString(10)%></td>
 						<td><%=rs.getString(11)%></td>
-						<td><a href="updatePurchaseRecordAdmin.jsp?idPurchase=<%=rs.getString(1)%>"><h6>updateRecord</h6></a></td>
-						<td><a href="DeleteOrdersCtl?idPurchase=<%=rs.getString(1)%>"><h6>deleteRecord</h6></a></td>
+						<td><a href="updatePurchaseRecordAdmin.jsp?idPurchase=<%=rs.getString(1)%>"><h6>Update Record</h6></a></td>
+						<td><a href="DeleteOrdersCtl?idPurchase=<%=rs.getString(1)%>"><h6>Delete Record</h6></a></td>
 					</tr>
 
 					<%
