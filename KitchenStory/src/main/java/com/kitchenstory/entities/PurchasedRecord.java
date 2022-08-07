@@ -11,14 +11,16 @@ public class PurchasedRecord {
 	private String purchase_DeliveryStatus;
 	private String purchase_PaymentMode;
 	private String purchase_TotalAmount;
-	private String purchase_ExpectedMinutesForDelivery;
+	private String purchase_ExpectedDaysForDelivery;
 
-	public String getPurchase_ExpectedMinutesForDelivery() {
-		return purchase_ExpectedMinutesForDelivery;
+	
+
+	public String getPurchase_ExpectedDaysForDelivery() {
+		return purchase_ExpectedDaysForDelivery;
 	}
 
-	public void setPurchase_ExpectedMinutesForDelivery(String purchase_ExpectedMinutesForDelivery) {
-		this.purchase_ExpectedMinutesForDelivery = purchase_ExpectedMinutesForDelivery;
+	public void setPurchase_ExpectedDaysForDelivery(String purchase_ExpectedDaysForDelivery) {
+		this.purchase_ExpectedDaysForDelivery = purchase_ExpectedDaysForDelivery;
 	}
 
 	public long getId_Purchase() {
@@ -108,7 +110,7 @@ public class PurchasedRecord {
 				+ ", purchase_UserShippingAddress=" + purchase_UserShippingAddress + ", purchase_Date=" + purchase_Date
 				+ ", purchase_Category=" + purchase_Category + ", purchase_DeliveryStatus=" + purchase_DeliveryStatus
 				+ ", purchase_PaymentMode=" + purchase_PaymentMode + ", purchase_TotalAmount=" + purchase_TotalAmount
-				+ ", purchase_ExpectedMinutesForDelivery=" + purchase_ExpectedMinutesForDelivery + "]";
+				+ ", purchase_ExpectedDaysForDelivery=" + purchase_ExpectedDaysForDelivery + "]";
 	}
 
 }

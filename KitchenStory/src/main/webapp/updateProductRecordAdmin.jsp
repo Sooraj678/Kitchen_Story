@@ -17,7 +17,7 @@
 			<div class="col-md-6 offset-md-4">
 
 				<div class="card mt-3">
-					<div class="card-header bg-info text-white">
+					<div class="card-header bg-warning text-white">
 						<%@ include file="components/message.jsp"%>
 						<h1>Update Product</h1>
 					</div>

@@ -70,9 +70,9 @@ public class CheckoutOrderedCtl extends HttpServlet {
 
 			record.setPurchase_DeliveryStatus(purchase_DeliveryStatus);
 
-			String purchase_ExpectedMinutesForDelivery = "7-Days Max for Delivery";
+			String purchase_ExpectedDaysForDelivery = "7-Days Max for Delivery";
 
-			record.setPurchase_ExpectedMinutesForDelivery(purchase_ExpectedMinutesForDelivery);
+			record.setPurchase_ExpectedDaysForDelivery(purchase_ExpectedDaysForDelivery);
 
 			long flag = PurchasedRecordDao.addPurchasedRecord(record);
 
