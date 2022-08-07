@@ -18,8 +18,8 @@
 					<%@include file="components/message.jsp"%>
 					<div class="card-body px-5">
 
-						<div class="card-header bg-secondary text-white mt-3 mb-3">
-							<h1>Any Query...!!</h1>
+						<div class="card-header bg-warning text-white mt-3 mb-3">
+							<h1>Send-Query to US</h1>
 						</div>
 						<form action="ContactUserCtl" method="post">
 							<div class="form-group">

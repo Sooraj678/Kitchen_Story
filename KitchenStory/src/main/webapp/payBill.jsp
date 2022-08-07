@@ -36,7 +36,7 @@ if (user == null) {
 
 					<%@include file="components/message.jsp"%>
 					<div class="card-body px-5">
-						<div class="card-header bg-secondary text-white mt-3 mb-3">
+						<div class="card-header bg-warning text-white mt-3 mb-3">
 							<h4>Make Payment</h4>
 						</div>
 						<form name="payBill" method="get" action="invoiceDetail.jsp">

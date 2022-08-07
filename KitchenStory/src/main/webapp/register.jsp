@@ -18,7 +18,7 @@
 					<%@include file="components/message.jsp"%>
 					<div class="card-body px-5">
 
-						<div class="card-header bg-secondary text-white mt-3 mb-3">
+						<div class="card-header bg-warning text-white mt-3 mb-3">
 							<h1>Register Here...!!</h1>
 						</div>
 						<form action="RegisterCtl" method="post">
