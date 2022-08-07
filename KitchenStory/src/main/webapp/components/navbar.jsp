@@ -19,7 +19,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link"
-					href="index.jsp"><b>Home-Page</b> <span class="sr-only">(current)</span>
+					href="index.jsp"><b>Home Page</b> <span class="sr-only">(current)</span>
 				</a></li>
 
 			</ul>
@@ -38,16 +38,28 @@
 				%>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="login.jsp"><b>Login-Here</b></a></li>
+					href="login.jsp"><b>Login</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="register.jsp"><b>New-User</b> </a></li>
+					href="register.jsp"><b>Register</b> </a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp"><b>Know About-Us</b></a></li>
+					href="aboutUS.jsp"><b>About</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp"><b>Send any Query to Us</b></a></li>
+					href="contactUS.jsp"><b>Query</b></a></li>
+					
+					<!-- Search Bar Coding or search Icon coding -->
+					<div class="search-container">
+						<form action="searchItems.jsp" method="post">
+							<input type="text" placeholder="Search Kitchen Items"
+								name="searchName">
+							<button type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+					<!-- Search Bar ends here -->
 
 				<%
 					} else {
@@ -59,13 +71,25 @@
 				</a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="LogoutCtl"><b>User-Logout</b></a></li>
+					href="LogoutCtl"><b>Logout</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="aboutUS.jsp"><b>Know About-Us</b></a></li>
+					href="aboutUS.jsp"><b>About</b></a></li>
 
 				<li class="nav-item active"><a class="nav-link"
-					href="contactUS.jsp"><b>Send any Query to Us</b></a></li>
+					href="contactUS.jsp"><b>Query</b></a></li>
+					
+					<!-- Search Bar Coding or search Icon coding -->
+					<div class="search-container">
+						<form action="searchItems.jsp" method="post">
+							<input type="text" placeholder="Search Kitchen Items"
+								name="searchName">
+							<button type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</form>
+					</div>
+					<!-- Search Bar ends here -->
 
 				<%
 					}

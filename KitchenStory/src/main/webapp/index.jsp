@@ -18,7 +18,7 @@
 <body>
 
 	<%@include file="components/navbar.jsp"%>
-
+<%@include file="components/message.jsp"%>
 	<!-- For Showing Complete data into center  -->
 	<div class="container-fluid">
 
