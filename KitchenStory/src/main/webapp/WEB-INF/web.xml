@@ -76,6 +76,12 @@
   	<description></description>
   	<servlet-class>com.kitchenstory.controller.UpdatePurchaseRecordCtl</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>UpdateCategoryCtl</servlet-name>
+  	<display-name>UpdateCategoryCtl</display-name>
+  	<description></description>
+  	<servlet-class>com.kitchenstory.controller.UpdateCategoryCtl</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>RegisterCtl</servlet-name>
   	<url-pattern>/RegisterCtl</url-pattern>
@@ -123,5 +129,9 @@
   <servlet-mapping>
   	<servlet-name>UpdatePurchaseRecordCtl</servlet-name>
   	<url-pattern>/UpdatePurchaseRecordCtl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UpdateCategoryCtl</servlet-name>
+  	<url-pattern>/UpdateCategoryCtl</url-pattern>
   </servlet-mapping>
 </web-app>
