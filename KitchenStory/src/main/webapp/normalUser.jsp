@@ -16,6 +16,7 @@
 	<%@include file="components/navbar.jsp"%>
 <body>
 	<div class="about-section">
+	<%@include file="components/message.jsp"%>
 		<div class="inner-width">
 			<h1 style="color: #ff4081 !important">
 				<b>Welcome to Your Cart Portal</b>
@@ -31,16 +32,43 @@
 							wish to launching Our E-commerce application with a rich and
 							user-friendly interface.</p>
 						<a href="index.jsp" style="color: blue;"><b>To Shop with
-								US Please click here</b></a>
+								US Please click here</b></a><br>
+
+					</div>
+				</div>
+
+				<div class="about-section-col">
+					<div class="about-section-col">
+						<div class="about">
+						
+						
+<form action="yourOrderBill.jsp" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email Address used for ordered</label>
+    <input type="email" name="orderedEmail" class="form-control" id="ordered-Email" aria-describedby="emailHelp" placeholder="Enter email which used for Placing your Order">
+  </div>
+  <button type="submit" class="btn btn-info">To see
+									your Active order bill Please Click Here</button>
+</form>
+						
+						</div>
 
 					</div>
 
-					<div class="about-section-col mt-4">
-						<h2 style="color: blue;">Now goto Cart...!!</h2>
+				<div class="about-section-col">
 
+					<div class="about-section-col mt-5">
+						<div class="about">
+
+							<a href="#" style="color:blue;"><b>Now goto Cart to
+									place the Order</b></a>
+						</div>
 					</div>
+				</div>
 
 				</div>
+
+
 			</div>
 		</div>
 	</div>
