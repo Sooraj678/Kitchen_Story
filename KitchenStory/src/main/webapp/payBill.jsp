@@ -73,10 +73,11 @@ if (user == null) {
 							<%
 								try {
 								String userEmail = request.getParameter("emailId");
+								String processing = "Processing";
 								System.out.println("coming Id for Bill Print is: " + userEmail);
 								Connection con = DbConnectionProvider.getCon();
 								Statement stmt = con.createStatement();
-								ResultSet rs = stmt.executeQuery("select SUM(purchase_TotalAmount) from purchasedrecord where purchase_UserEmail = '" + userEmail + "'");
+								ResultSet rs = stmt.executeQuery("select SUM(purchase_TotalAmount) from purchasedrecord where purchase_UserEmail = '" + userEmail + "' AND purchase_DeliveryStatus = '" + processing + "'");
 								String CountTotalAmount="";
 								while (rs.next()) { 
 									CountTotalAmount = rs.getString(1);
