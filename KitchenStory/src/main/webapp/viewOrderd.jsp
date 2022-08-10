@@ -54,7 +54,7 @@ if (user == null) {
 					</div>
 					<div class="about">
 						<a href="bill.jsp?emailId=<%=user.getUserEmail()%>"
-							style="color: black;"><b>See Your Bill...!!</b></a>
+							style="color: black;"><b>Pay Your Bill</b></a>
 					</div>
 
 				</div>
